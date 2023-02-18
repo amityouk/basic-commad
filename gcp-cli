@@ -84,6 +84,10 @@ PURPOSE                     	COMMAND
 Create deployments	        ## gcloud deployment-manager deployments create
 Update deployments	        ## gcloud deployment-manager deployments update
 
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+https://support.google.com/elastifile-support/answer/9899169?hl=en
+
 
 
 
