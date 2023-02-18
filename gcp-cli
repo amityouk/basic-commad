@@ -1,0 +1,123 @@
+# https://jayendrapatil.com/google-cloud-gcloud-cheat-sheet/
+
+
+=============================Google Cloud GCloud Cheat Sheet==========================================
+=======================Google Cloud Config==============================
+PURPOSE                             	COMMAND
+List projects	gcloud config list ## gcloud config list project
+List projects	gcloud config list ## gcloud config list project
+Show project info	gcloud compute ## project-info describe
+Switch project	gcloud           ## config set project <project-id>
+Set the active account	         ## gcloud config set account <ACCOUNT>
+Set default region	             ## gcloud config set compute/region us-west
+Set default zone	               ## gcloud config set compute/zone us-west1-b
+List configurations	             ## gcloud config configurations list
+Activate configuration	         ## gcloud config configurations activate
+
+===================Google Cloud IAM====================================
+PURPOSE	                 COMMAND
+get project roles	                  ## gcloud projects get-iam-policy
+copy roles across org and projects  ## gcloud iam roles copy
+get project roles	                  ## gcloud projects get-iam-policy
+copy roles across org and projects	## gcloud iam roles copy
+
+================================Google Cloud Auth===================
+PURPOSE                                         	COMMAND
+Display a list of credentialed accounts	      ## gcloud auth list
+Authenticate client using service account	    ## gcloud auth activate-service-account --key-file <key-file>
+Auth to GCP Container Registry	              ## gcloud auth configure-docker
+Print token for active account	              ## gcloud auth print-access-token, gcloud auth print-refresh-token
+Revoke previous generated credential	        ## gcloud auth <application-default> revoke
+
+===================================Google Cloud Storage==================================
+PURPOSE	                                       COMMAND
+List all buckets and files	              ## gsutil ls, gsutil ls -lh gs://<bucket-name>
+Create bucket	                            ## gsutil mb gs://<bucket-name>
+Download file                             ## 	gsutil cp gs://<bucket-name>/<dir-path>/app.txt
+Upload file                               ## 	gsutil cp <filename> gs://<bucket-name>/<directory>/
+Delete file	                              ## gsutil rm gs://<bucket-name>/<filepath>
+Move file                                 ## 	gsutil mv <src-filepath> gs://<bucket-name>/<directory>/<dest-filepath>
+Copy folder	                              ## gsutil cp -r ./conf gs://<bucket-name>/
+Show disk usage	                          ## gsutil du -h gs://<bucket-name/<directory>
+Make all files readable	                  ## gsutil -m acl set -R -a public-read gs://<bucket-name>/
+Create signed url with duration	          ## gsutil signurl -d 1m
+
+================================Google Kubernetes Engine ==============================================
+PURPOSE	                                           COMMAND
+create cluster	                           ## gcloud container clusters create cluster-name --num-nodes 1
+List all container clusters                ## gcloud container clusters list
+Set kubectl context                        ## gcloud container clusters get-credentials <cluster-name>
+Set default cluster	                       ## gcloud config set container/cluster cluster-name
+resize existing cluster	                   ## gcloud container clusters resize --num-nodes
+
+========================================Google Cloud Compute Engine================================
+PURPOSE	                                                    COMMAND
+List all instances	                         ## gcloud compute instances list , gcloud compute instance-templates list
+Show instance info	                         ## gcloud compute instances describe "<instance-name>" --project "<project-name>" --zone "us-west2-a"
+Stop an instance	                           ## gcloud compute instances stop instance-name
+Start an instance	                           ## gcloud compute instances start instance-name
+Create an instance	                         ## gcloud compute instances create vm1 --image image-1 --tags test --zone "<zone>" --machine-type f1-micro
+Create premptible instance	                 ## gcloud compute instances create "preempt" --preemptible
+SSH to instance	                             ## gcloud compute ssh --project "<project-name>" --zone "<zone-name>" "<instance-name>"
+Images list	                                 ## gcloud compute images list
+
+================================Virtual Private Network ================================================
+PURPOSE	                                           COMMAND
+List all networks	                                 ## gcloud compute networks list
+Detail of one network	                             ## gcloud compute networks describe <network-name> --format json
+Create network	                                   ## gcloud compute networks create <network-name>
+Create subnet	                                     ## gcloud compute networks subnets create subnet1 --network subnet-1 --range 10.0.0.0/24
+List all firewall rules	                           ## gcloud compute firewall-rules list
+List all forwarding rules	                         ## gcloud compute forwarding-rules list
+Describe one firewall rule	                       ## gcloud compute firewall-rules describe <rule-name>
+Create firewall rule	                             ## gcloud compute firewall-rules create my-rule --network default --allow tcp:22
+Update firewall rule	                             ## gcloud compute firewall-rules update default --network default --allow tcp:80
+
+============================================Components======================================================================
+PURPOSE                               	COMMAND
+List down the components	              ## gcloud components list
+Update the components	                  ## gcloud components update
+Install the components	                ## gcloud components install <component-name>
+
+=======================================Deployment Manager =============================
+PURPOSE                     	COMMAND
+Create deployments	        ## gcloud deployment-manager deployments create
+Update deployments	        ## gcloud deployment-manager deployments update
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gcloud compute networks subnets create subnet1 --network subnet-1 --range 10.0.0.0/24
+
+gcloud compute firewall-rules create myfistvpc-allow-https --network myfistvpc  --priority 1000 --target-tags https-server --allow tcp:443 --source-ranges 0.0.0.0/0 --no-disabled   # create firewall rule
+
+gcloud compute networks subnets create us-central1 --network myfistvpc --region us-central1 --range 10.200.0.0/20
+
+gcloud compute networks subnets create mysubnet--1 --network myfistvpc --region us-central1 --range 10.200.0.0/20
+
+gcloud compute networks subnets delete  mysubnet--1 --region us-central1
+
+gcloud compute networks subnets list-usable --project qwiklabs-gcp-01-e8ca5a620799
+
+gcloud config set compute/zone us-central1
+gcloud config unset compute/region us-central1
+
+Login to service account for service project
+
+create machine #gcloud compute instances create –machine-type=n1-standard-4 whiz-server-1
+
+gcloud auth login admiral@qwiklabs-services-prod.iam.gserviceaccount.com   ask autorization toaken code 
