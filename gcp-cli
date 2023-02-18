@@ -11,6 +11,7 @@ Switch project	gcloud           ## config set project <project-id>
 Set the active account	         ## gcloud config set account <ACCOUNT>
 Set default region	             ## gcloud config set compute/region us-west
 Set default zone	               ## gcloud config set compute/zone us-west1-b
+Create a new named configuration ## gcloud config configurations create
 List configurations	             ## gcloud config configurations list
 Activate configuration	         ## gcloud config configurations activate
 
@@ -88,6 +89,160 @@ Update deployments	        ## gcloud deployment-manager deployments update
 
 https://support.google.com/elastifile-support/answer/9899169?hl=en
 
+#############################################################
+Service accounts
+# A service account is a special kind of account used by an application and other gcp resouce to communication like and  rather than a person. Applications use service accounts to make authorized API calls, authorized as either the service account itself. They are the most common way 
+applications authenticate with Google Cloud Storage. Every project has service accounts associated with it,
+which may be used for different authentication scenarios, as well as to enable advanced features such as Signed URLs and browser uploads using POST.
+
+# bukets: Google storage is a file storage service available from Google Cloud. Quite similar to Amazon S3 it offers interesting functionalities such as signed-urls, bucket synchronization, 
+collaboration bucket settings, parallel uploads and is S3 compatible.
+
+#start using gsutil, you first need to authenticate it with your Google Cloud Platform account. Issue the command gcloud auth login
+
+#flag -m, to perform a parallel (multi-threaded/multi-processing) copy include local subfolders in your upload, -r 
+
+https://medium.com/@raigonjolly/cheat-sheets-gcloud-bq-gsutil-kubectl-for-google-cloud-associate-certificate-4093b8977a01
+
+ ##gcloud compute instance-groups list-instances 
+ ## gcloud compute instance-groups list
+ ## gcloud compute instance-groups managed instance-configs list
+  
+  ## gcloud compute target-instances list
+  ## gcloud compute regions list
+  ## gcloud compute instances os-inventory list-instances
+  ## gcloud compute instance-groups managed list-instances
+  ## gcloud compute instance-groups unmanaged list-instances
+
+
+Show project info    ## gcloud compute project-info describe
+Switch project       ## gcloud config set project <project-id>
+                                ## gsutil lifecycle set <config_file.json> gs://<bucket_name> is met.
+
+Make all files readable         ## gsutil -m acl set -R -a public-read gs://<bucket-name>/
+Config auth gsutil config -a
+Grant bucket access             ## gsutil iam ch user:denny@gmail.com:objectCreator,objectViewer gs://<bucket-name>
+Remove bucket access            ## gsutil iam ch -d user:denny@gmail.com:objectCreator,objectViewer gs://<bucket-name>
+
+
+gsutil -v
+
+gsutil mb gs://mybuketname  # create buket
+
+gsutil cp * gs://mybuketname   # copy all file from current directory to buket
+
+
+
+# gsutil ls gs://mybuketname  # list buket conatin 
+# gsutil rm * gs://mybuketname/*  # remove the objects from the storage bucket
+# gsutil rb gs://mybuketname/  #deleting the Cloud Storage bucket
+
+# gsutil cp  gs://<bucket_A>/<remote_file> gs://<bucket_B>/ # transfer a file between buckets 
+
+# sutil cp <new_folder> gs://<bucketname>/  #Create a folder in a bucket with cp
+
+# gsutil du -h gs://<bucketname>/   # Check storage space with du
+
+# gsutil -m rsync -r -d ./myfolder gs://<bucketname> #synchronizes the content of the local folder with the storage bucket
+# gsutil ls -L -b gs://bucket #listing-bucket-details
+
+
+#Bucket  and Bucket versioning
+# gsutil versioning set on gs://<bucketname>
+# gsutil versioning set off gs://<bucketname>
+
+##############Lifecycle#############################
+Lifecycle configurations allows you to automatically delete or change the storage class of objects when some criterion
+To enable lifecycle for a bucket with settings defined in the config_file.json file, run:
+
+
+################################ Network##################################
+List all networks gcloud compute networks list
+Detail of one network gcloud compute networks describe <network-name> --format json
+Create network gcloud compute networks create <network-name>
+Create subnet gcloud compute networks subnets create subnet1 --network net1 --range 10.5.4.0/24
+Get a static ip gcloud compute addresses create --region us-west2-a vpn-1-static-ip
+List all ip addresses gcloud compute addresses list
+Describe ip address gcloud compute addresses describe <ip-name> --region us-central1
+List all routes gcloud compute routes list
+
+
+###############################DNS##############################################
+
+List of all record-sets in myzone    ## gcloud dns record-sets list --zone my_zone
+List first 10 DNS records            ## gcloud dns record-sets list --zone my_zone --limit=10
+
+
+
+
+
+################Images & Containers##############################
+
+List all container clusters      ## gcloud container clusters list
+Set kubectl context              ## gcloud container clusters get-credentials <cluster-name>
+
+###########################RDS#########################################
+List all sql instances          ## gcloud sql instances list
+
+######################### Services####################################
+List my backend services                  ## gcloud compute backend-services list
+List all my health check endpoints        ## gcloud compute http-health-checks list
+List all URL maps                         ## gcloud compute url-maps list
+
+################## Disks & Volumes######################################
+List all disks                       # gcloud compute disks list
+List all disk types                  # gcloud compute disk-types list
+List all snapshots                   # gcloud compute snapshots list
+Create snapshot                      # gcloud compute disks snapshot <diskname> --snapshotname <name1> --zone $zone
+
+########################GKE##############################################
+Display a list of credentialed accounts            ## gcloud auth list
+Set the active account                             ## gcloud config set account <ACCOUNT>
+Set kubectl context                                ## gcloud container clusters get-credentials <cluster-name>
+Change region                                      ## gcloud config set compute/region us-west
+Change zone                                        ## gcloud config set compute/zone us-west1-b
+List all container clusters                        ## gcloud container clusters list
+
+
+######################
+List all zones             # gcloud compute zones list
+
+
+###################VM###########################
+
+gcloud compute instances describe # Display a virtual machine (VM) instance’s details
+
+# stop compute instance The --async parameterdisplays information about the start operation. ## gcloud compute instances stop INSTANCE-NAME --async 
+
+List all VM instances in a project               ## gcloud compute instances list 
+
+#Create snapshot of persistent disks             ## gcloud compute disks snapshot 
+
+Display a specified snapshot’s details          ## gcloud compute snapshots describe 
+
+Delete a snapshot                               ## gcloud compute snapshots delete 
+
+Connect to a VM instance by using SSH           ## gcloud compute ssh mv-server 
+
+
+Show instance info                              ## gcloud compute instances describe "<instance-name>" --project "<project-name>" --zone "us-Stop an instance gcloud compute instances stop instance-2
+
+Start an instance                               ## gcloud compute instances start instance-2
+
+Create an instance                              ## gcloud compute instances create vm1 --image image-1 --tags test --zone "<zone>" --machine-SSH to instance gcloud compute ssh --project "<project-name>" --zone "<zone-name>" "<instance-name>"
+
+Download files                                  ## gcloud compute copy-files example-instance:~/REMOTE-DIR ~/LOCAL-DIR --zone us-central1-a
+
+Upload files                                     ## gcloud compute copy-files ~/LOCAL-FILE-1 example-instance:~/REMOTE-DIR --zone us-centra
+
+
+#######################
+Initialize, authorize, and configure gcloud      ## gcloud init 
+
+Display version and installed components         ## gcloud version
+
+Display current gcloud environment details       ## gcloud info
+Fetch value of a gcloud CLI property           ## gcloud config get value 
 
 
 
