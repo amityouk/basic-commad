@@ -39,3 +39,7 @@ echo "#################################################clear file file3.txt ####
 
 echo "#################################################delete file file2.txt ######################## "
 rm -rf /tmp/dir1/file2.txt
+#https://www.unix.com/unix-for-dummies-questions-and-answers/95896-list-files-not-directories-current-directory.html
+#https://superuser.com/questions/246837/how-do-i-add-text-to-the-beginning-of-a-file-in-bash
+
+
