@@ -1,8 +1,14 @@
 #!/bin/bash
 echo "#############################################Welcome to my first script file#############################################################"
-mkdir -p /tmp/dir1
-mkdir -p /tmp/dir2
-mkdir -p /tmp/dir3
+#!/bin/bash
+a=1
+b="/tmp/dir"
+while [[ $a -lt 4 ]];do
+    mkdir -p ${b}${a}
+    echo "$b$a"
+    ((a++))
+done
+
 echo "########################################list only file###################################################################################"
 find /tmp -maxdepth 1 -type f -exec ls -l {} \; #https://www.unix.com/unix-for-dummies-questions-and-answers/95896-list-files-not-directories-current-directory.html
 echo "#############################list only Directory##########################################################################################"
