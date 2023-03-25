@@ -1,0 +1,10 @@
+---
+- hosts: tomcat
+  become: true
+  remote_user: ansible
+  
+  tasks:
+    - name: copy
+      copy: 
+        src: /home/ansible/ansible/webapp/target/webapp.war
+        dest: /usr/share/tomcat/webapps

@@ -1,0 +1,35 @@
+ ansible all -m group -a "name=team-1"
+    ansible all -m user -a "name=pooja state=present group=team-1" --become -K 
+    =
+    ansible all -m file -a "path=/home/pooja owner=pooja mode='730' group=team-1" --become -K
+    ansible all -m file -a "path=/home/pooja/teamd state=directory owner=pooja group=team-1 mode=0770" --become -K  
+    ansible all -m file -a "path=/home/pooja/ninjad state=directory owner=pooja group=team-1 mode=707" --become -K
+https://git.coop/-/snippets/86
+=============change passwd Ad-hoc command=================
+ https://jianjye.medium.com/how-to-update-user-password-with-ansible-f971f41a3b3e
+
+ansible web -m user -a "name=pooja update_password=always password={{ newpassword|password_hash('sha512') }}" -b --extra-vars "newpassword=root@123"
+
+=====================Change user Shell command=============
+ ansible all -m user -a "name=pooja state=present  shell=/sbin/nologin  group=team-1" --become -K
+
+
+ansible 192.168.1.14 -m shell -a "getent passwd | cut -d: -f1 " -b -K      
+
+ ansible 192.168.1.14 -m shell -a "getent group | cut -d: -f1 " -b -K 
+
+ansible 192.168.1.14 -m shell -a "less /etc/passwd " -b -K  
+
+ansible 192.168.1.14 -m shell -a " less /etc/passwd && less /etc/group " -b -K 
+
+
+ansible 192.168.1.14 -m shell -a "getent passwd | cut -d: -f1 && less /etc/group " -b -K 
+
+less /etc/group
+
+====================Delete Group==========================================
+
+ansible 192.168.1.14 -m shell -a "getent absent | cut -d: -f1 && less /etc/group " -b -K
+
+https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_privilege_escalation.html
+https://stackoverflow.com/questions/72319038/using-become-true-to-change-default-shell-with-ansible-not-working

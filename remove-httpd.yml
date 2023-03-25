@@ -1,0 +1,12 @@
+---
+- hosts: web
+  remote_user: ansible
+  become: true
+  vars:
+    project_root: /var/www/html
+  tasks:  
+  - name: remove Apache Webserver
+    yum: pkg=httpd state=absent
+  - name: Place the index file at project root
+    file: path={{ project_root }}/index.html
+...
