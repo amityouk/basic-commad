@@ -268,6 +268,26 @@ gcloud auth login admiral@qwiklabs-services-prod.iam.gserviceaccount.com   ask a
 
 ================================Google Kubernetes Engine ==============================================
 https://www.bluematador.com/learn/kubectl-cheatsheet
+https://k21academy.com/docker-kubernetes/kubernetes-installation-options/
+
+Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications.
+
+Everything from Scratch (Hard Way)
+Unmanaged (Installer Based)
+Kubernetes with kubeadm
+Kubernetes with Kops
+Kubernetes with Kubespray
+Kubernetes for Development
+Kubernetes using Minikube
+Kubernetes using Docker for Desktop
+Kubernetes in Production
+Managed Kubernetes (Platform Based)
+Elastic Kubernetes Service (EKS)
+Azure Kubernetes Service (AKS)
+Google Kubernetes Engine (GKE)
+Oracle Kubernetes Engine (OKE) 
+
+====================================================================================
 PURPOSE	                                           COMMAND
 create cluster	                           ## gcloud container clusters create cluster-name --num-nodes 1
 List all container clusters                ## gcloud container clusters list
