@@ -1,3 +1,4 @@
+```
 ###########################Speeking###################################################
 ```
 ```
@@ -426,7 +427,7 @@ https://github.com/amityouk/basic-commad/blob/master/1.pdf.webp
 420	Are You coming?
 
 https://thefluentlife.com/content/daily-use-english-sentences-conversations-spoken-english-sentences-everyday/
-
+https://hindimediumhelp.blogspot.com/2020/01/Daily-use-english-sentences.html
 421	Great, thanks. How are you?							
 422	I’m fine, thank you.							
 423	Let me introduce myself. I’m							
@@ -477,12 +478,7 @@ https://thefluentlife.com/content/daily-use-english-sentences-conversations-spok
 468	Get Off – उतर जाओ।
 469	Do come – जरूर आना
 470	Let it be – चलो जाने दो।
-
-
-
 ```
-
-
 
 ```
 1	Description	46	portrait	91	Absence	135	Justify
@@ -530,6 +526,5 @@ https://thefluentlife.com/content/daily-use-english-sentences-conversations-spok
 43	journey	88	Yesterday	133	Incorporate	177	yellow
 44	joy	89	Zone	134	journalist	178	yes
 45	Judge	90	Zany				
-
 
 ```
