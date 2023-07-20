@@ -1,16 +1,8 @@
-```
 ###########################Speeking###################################################
 ```
 ```
-
-
-
-
-
+https://github.com/amityouk/basic-commad/blob/master/1.pdf.webp
 ```
-
-
-
 ```	
 1	Good morning!
 2	How are you?
@@ -432,7 +424,111 @@
 418	What time do we need to be there?
 419	What time is your flight?
 420	Are You coming?
+https://thefluentlife.com/content/daily-use-english-sentences-conversations-spoken-english-sentences-everyday/
+https://hindimediumhelp.blogspot.com/2020/01/Daily-use-english-sentences.html
+421	Great, thanks. How are you?							
+422	I’m fine, thank you.							
+423	Let me introduce myself. I’m							
+424	Nice to meet you. I’m …							
+425	Mukesh, have you met Aman?							
+426	Mukesh, please meet Amit  # introduce to others person.							
+427	I really appreciate your help.							
+428	There are no words to show my appreciation!							
+429	Congratulations! You deserve it!							
+430	Amazing! Congratulations.							
+431	It’s very kind of you. # Response to Congratulations							
+432	I’m really happy to inform you that… #Giving Good News in Easy Words							
+433	I’m so glad to hear that! #Replying to Good News							
+434	I really don’t know how to say it, but… # Giving Bad News in Easy English Sentences							
+435	Sorry to hear that. Accept my deepest sympathy. # Replying to Bad News Using Basic Sentences							
+436	As you please – जैसी आपकी मर्जी।
+437	Oh, I am sorry. I have got a bit late – माफ़  कीजिएगा , मुझे थोड़ी देर हो गई।
+438	I beg your pardon – माफ़  कीजिएगा । 
+439	Would you please speak slowly ? – क्या आप थोड़ा धीरे बोलेंगे ?
+440	It’s all yours – इसे अपनी ही चीज़ समझें।
+441	That’s so kind of you – आपकी बड़ी कृपा है।
+442	Sorry for the inconvenience – आपको कष्ट हुआ इसके लिए क्षमा करें।
+443	Glad/Nice to meet you – आपसे मिल कर बड़ी ख़ुशी हुई।
+444	I will try my level best – मैं पूरा प्रयास करूँगा।
+445	Please help yourself – कृपया अपने आप लीजिए।
+446	Well done, dear – शाबाश प्यारे।
+447	Of Course ! – बेशक़ !
+448	By God’s Grace ! – प्रभु कृपा से !
+449	Wonderful ! – अदभुत ! आपने तो कमाल कर दिया!
+450	How disgraceful ! – कितने अपमान की है !
+451	Good heavens ! – हे प्रभु !
+452	How dare you ? – तुम्हारी हिम्मत कैसे हुई ?
+453	Hurry up ! – जल्दी करो।
+454	Rest assured – भरोसा रखो।
+455	Long time no see – बहुत दिनों से आपको नहीं देखा।
+456	Doesn’t matter – कोई बात नहीं।
+457	Touch wood ! – कहीं नजर ना लगे।
+458	Watch out ! – देख के।  संभल के।
+459	Come what may ! – अब चाहे जो  हो !
+460	What a bother ! –  क्या मुसीबत है !
+461	What nonsense ! क्या बकवास है!
+462	Is it ? – क्या सच ?
+463	How disgusting ! – छि:
+464	Not the least ! – थोड़ा भी नहीं !
+465	Yes, by all means – हाँ हाँ जरूर !
+466	Go up – ऊपर जाओ ।
+467	Go down – नीचे जाओ ।
+468	Get Off – उतर जाओ।
+469	Do come – जरूर आना
+470	Let it be – चलो जाने दो।
 
+
+
+```
+
+
+
+```
+1	Description	46	portrait	91	Absence	135	Justify
+2	Dialogue	47	portray	92	Academic	136	kitchen
+3	Dimension	48	pose	93	Accompany	137	knee
+4	Discrimination	49	Position	94	Accomplish	138	knife
+5	Distinction	50	qualify	95	Acknowledge	139	knock
+6	Distinguish	51	quality	96	Adapt	140	know
+7	elementary	52	Quarter	97	Administration	141	Knowledge
+8	eliminate	53	quit	98	Affect	142	land
+9	elite	54	quite	99	Afford	143	landscape
+10	else	55	Quote	100	Analysis	144	language
+11	elsewhere	56	recipe	101	Apparently	145	lap
+12	e-mail	57	Recognition	102	Background	146	large
+13	embrace	58	refugee	103	Balance	147	largely
+14	emerge	59	refuse	104	Besides	148	Last
+15	emergency	60	Regard	105	Beside	149	manufacturing
+16	emission	61	scientist	106	Beyond	150	many
+17	Emotion	62	scope	107	Borrow	151	map
+18	fewer	63	score	108	Boundary	152	margin
+19	fiber	64	scream	109	Budget	153	mark
+20	fiction	65	screen	110	Building	154	market
+21	Field	66	Script	111	Business	155	Marketing
+22	foreign	67	tactic	112	Calculate	156	negotiation
+23	forest	68	tail	113	Campaign	157	neighbour
+24	forever	69	take	114	Campus	158	neighbourhood
+25	forget	70	tale	115	Capability	159	neither
+26	form	71	Talent	116	Capacity	160	Nerve
+27	formal	72	ultimately	117	Category	161	objective
+28	Formation	73	unable	118	Challenge	162	obligation
+29	gaze	74	uncle	119	Characteristic	163	observation
+30	gear	75	under	120	Civil	164	Observe
+31	gender	76	undergo	121	Coalition	165	opportunity
+32	gene	77	Understand	122	Colonial	166	Oppose
+33	general	78	victory	123	Deal	167	porch
+34	generate	79	video	124	Defensive	168	port
+35	generation	80	view	125	Democracy	169	portion
+36	genetic	81	viewer	126	illustrate	170	weather
+37	highlight	82	village	127	image	171	wedding
+38	highly	83	violate	128	Imagination	172	Week
+39	Highway	84	Violation	129	impact	173	yard
+40	holiday	85	wealthy	130	implement	174	yeah
+41	holy	86	weapon	131	Implication	175	year
+42	Home	87	wear	132	income	176	yell
+43	journey	88	Yesterday	133	Incorporate	177	yellow
+44	joy	89	Zone	134	journalist	178	yes
+45	Judge	90	Zany				
 
 
 ```
