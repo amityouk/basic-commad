@@ -1,8 +1,17 @@
-![image](https://github.com/amityouk/basic-commad/assets/28145437/3e32b216-8c5c-4a15-b4d0-6f8f728d6852)```
-- [ ] Speeking
+```
+###########################Speeking###################################################
 ```
 ```
-	
+
+
+
+
+
+```
+
+
+
+```	
 1	Good morning!
 2	How are you?
 3	What’s your name?
@@ -323,64 +332,107 @@
 318	Go ahead.
 319	Turn on the light.
 320	Prepare the bed.
-321	
-322	
-323	
-324	
-325	
-326	
-327	
-328	
-329	
-330	
-331	
-332	
-333	
-334	
-335	
-336	
-337	
-338	
-339	
-340	
-341	
-342	
-343	
-344	
-345	
-346	
-347	
-348	
-349	
-350	
-351	
-352	
-353	
-354	
-355	
-356	
-357	
-358	
-359	
-360	
-361	
-362	
-363	
-364	
-365	
-366	
-367	
-368	
-369	
-370	
-371	
-372	
-373	
-374	
-375	
-376	
-377	
-378	
-379	
-380	
+321	No worries.
+322	Long time no see!
+323	Drive safe.
+324	Call me when you get home.
+325	Don’t forget to buy milk.
+326	Call me back when you get a chance.
+327	That’s so annoying/frustrating/wonderful/exciting.
+328	He’s forever complaining about this country.
+329	On my way!
+330	Be right back.
+331	I’m just popping out quickly.  I’ll be back in an hour.
+332	I’m exhausted today.
+333	How stunning is the weather today!
+334	It’s on the tip of my tongue but I can’t remember.
+335	No thanks.
+336	Yes, please!
+337	I’ll check if I’m free.
+338	It’s been one of those days.
+339	Don’t jinx it!
+340	Thanks a million.
+341	Don’t worry about it.
+342	No sweat off my back.
+343	I’d rather stay at home tonight.
+344	What miserable weather we’re having!
+345	Don’t stress.
+346	It doesn’t matter.
+347	It’s not important.
+348	Don’t let it bother you too much.
+349	All good.  Can’t complain.
+350	I see where you’re coming from.
+351	I don’t agree.
+352	100%  That’s exactly how I feel.
+353	I really hope so.
+354	I doubt it. 
+355	Never better!
+356	Let's get going or we'll be late. 
+357	Please be quiet for a second.
+358	They’re making so much noise!
+359	I can’t concentrate.
+360	I can’t think straight.
+361	I can’t wait to unwind this weekend.
+362	Things are looking up!
+363	Well, at least things couldn’t get worse.
+364	So far, so good.
+365	It’s all good.
+366	What a waste of time.
+367	I need to go to the shops today.
+368	Let me know if you need anything.
+369	I would love to!
+370	I don’t feel like it. 
+371	Bless you!
+372	You’re being ridiculous!
+373	Just let it go. 
+374	It’s OK.
+375	Thank you. 
+376	Let’s do it!
+377	How’s it going?
+378	What’s for dinner?
+379	What’s happening this weekend?
+380	Do you have any plans for today?
+381	Are you busy or are you free to chat?
+382	Where are my keys?
+383	What are you getting up to this weekend?
+384	Are you keen to get together on Saturday?
+385	You’re joking?
+386	Have you got much going on these days?
+387	How’s your workday looking?
+388	Should we grab a bite to eat?
+389	Would you like to grab a coffee this afternoon?
+390	Would you mind helping me quickly?
+391	What are you up to?
+392	Could you give me a lift?
+393	Can I help you with anything?
+394	What time are you getting home today?
+395	Should we eat out tonight?
+396	How does pizza sound?
+397	What do you feel like doing?
+398	What are you watching?
+399	What are you reading?
+400	Are you keen to catch a movie tonight?
+401	What are you thinking about?
+402	Have you fed the dogs?
+403	What do you want to do?
+404	What do you want to eat?
+405	Can I make you some coffee?
+406	Where are you going?
+407	Should I take the dog for a walk?
+408	How much does it cost?
+409	Do you want to meet up next week?
+410	We could do dinner on Wednesday night?
+411	What’s on your mind?
+412	What’s eating you?
+413	Do you have a minute?
+414	Is everything OK?
+415	How was your weekend?
+416	How are you feeling today?
+417	What time did you get up?
+418	What time do we need to be there?
+419	What time is your flight?
+420	Are You coming?
+
+
+
 ```
