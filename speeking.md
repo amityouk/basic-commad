@@ -426,7 +426,6 @@ https://github.com/amityouk/basic-commad/blob/master/1.pdf.webp
 420	Are You coming?
 
 https://thefluentlife.com/content/daily-use-english-sentences-conversations-spoken-english-sentences-everyday/
-https://hindimediumhelp.blogspot.com/2020/01/Daily-use-english-sentences.html
 
 421	Great, thanks. How are you?							
 422	I’m fine, thank you.							
