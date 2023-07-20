@@ -1,0 +1,57 @@
+https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-ubuntu-16-04
+sudo hostname example.globusinfocom.com # set hostname
+For example domain name :- example.globusinfocom.com
+
+ sudo apt install apache2
+ sudo a2enmod ssl
+ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
+ 
+ Country Name (2 letter code) [AU]:IN 
+ State or Province Name (full name) [Some-State]:UP
+ Locality Name (eg, city) []:noida
+ Organization Name (eg, company) [Internet Widgits Pty Ltd]:Globus Infocom  
+ Common Name (e.g. server FQDN or YOUR name) []:example.globusinfocom.com
+ Email Address []:mksharmaplus@gmail.com 
+ 
+ ##########certifcate Path####################
+ # /etc/ssl/certs/apache-selfsigned.crt
+ #/etc/ssl/private/apache-selfsigned.key
+ cd /etc/ssl/certs
+ 
+ # create folder and file 
+ touch /etc/apache2/sites-available/example.globusinfocom.com.conf
+ touch /var/www/example.globusinfocom.com/index.html
+ mkdir -p /var/www/example.globusinfocom.com
+ mkdir -p /var/www/example.globusinfocom.com/logs
+ 
+# sudo nano /etc/apache2/sites-available/example.globusinfocom.com.conf
+ <VirtualHost *:443>
+    ServerName example.globusinfocom.com
+    ServerAlias www.example.globusinfocom.com
+    DocumentRoot /var/www/example.globusinfocom.com
+    SSLEngine on
+    SSLOptions +StrictRequire
+    ErrorLog /var/www/example.globusinfocom.com/logs/error.log
+    CustomLog /var/www/example.globusinfocom.com/access.log combined
+    SSLCertificateFile /etc/ssl/certs/apache-selfsigned.crt
+    SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key
+ </VirtualHost> 
+ 
+ ##################################################################
+ vi /var/www/example.globusinfocom.com/index.html
+ 
+ # create custom index.html
+ h1>it worked for test!</h1> 
+ 
+ #########################################
+ a2ensite example.globusinfocom.com.conf   # eanble website page
+ sudo a2ensite example.globusinfocom.com
+ sudo apache2ctl configtest    # check configure is ok
+ sudo systemctl reload apache2  #
+ a2dissite 000-default.conf  # disabled def website not need to run
+ 
+ 
+ ####################################
+ 
+ vi /etc/hosts 
+ 3.129.72.55 example.globusinfocom
