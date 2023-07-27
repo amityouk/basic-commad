@@ -2,6 +2,15 @@
 ###########################Speeking###################################################
 ```
 ```
+https://github.com/amityouk/basic-commad/blob/master/1000-Daily-Use-English-Sentences-PDF.pdf
+```
+```
+https://github.com/amityouk/basic-commad/blob/master/speaking-sentance-1.pdf
+```
+```
+https://github.com/amityouk/basic-commad/blob/master/210769418.pdf
+```
+```
 https://github.com/amityouk/basic-commad/blob/master/1.pdf.webp
 ```
 ```	
