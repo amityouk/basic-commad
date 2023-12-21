@@ -23,3 +23,4 @@
         packages:
           - jenkins
           - java-devel
+          - java-17-openjdk
