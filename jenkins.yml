@@ -1,6 +1,6 @@
 ---
 - hosts: web
-  remote_user: ansible
+  remote_user: ec2-user
   become: true
   tasks:
     - name: Ensure Jenkins repository is added
@@ -8,12 +8,12 @@
         name: jenkins-ci
         description: jenkins-ci package repository
         baseurl: http://pkg.jenkins.io/redhat
-        gpgkey: https://pkg.jenkins.io/redhat/jenkins.io.key
+        gpgkey: https://pkg.jenkins.io/redhat/jenkins.io-2023.key
         gpgcheck: yes
     - name: Ensure gpp key is imported
       rpm_key:
         state: present
-        key: https://pkg.jenkins.io/redhat/jenkins.io.key
+        key: https://pkg.jenkins.io/redhat/jenkins.io-2023.key
     - name: Ensure Jenkins and java-devel package installed
       yum:
         name: '{{ packages }}'
@@ -23,4 +23,3 @@
         packages:
           - jenkins
           - java-devel
-          - java-17-openjdk
